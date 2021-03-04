@@ -56,7 +56,8 @@ class Trainer:
                  early_stop_count: int,
                  epochs: int,
                  model: torch.nn.Module,
-                 dataloaders: typing.List[torch.utils.data.DataLoader]):
+                 dataloaders: typing.List[torch.utils.data.DataLoader],
+                 weight_decay: float):
         """
             Initialize our trainer class.
         """
@@ -64,6 +65,7 @@ class Trainer:
         self.learning_rate = learning_rate
         self.early_stop_count = early_stop_count
         self.epochs = epochs
+        self.weight_decay = weight_decay
 
         # Since we are doing multi-class classification, we use CrossEntropyLoss
         self.loss_criterion = torch.nn.CrossEntropyLoss()
@@ -75,7 +77,8 @@ class Trainer:
 
         # Define our optimizer. SGD = Stochastich Gradient Descent
         self.optimizer = torch.optim.SGD(self.model.parameters(),
-                                         self.learning_rate)
+                                         self.learning_rate,
+                                         weight_decay=self.weight_decay)
 
         # Load our dataset
         self.dataloader_train, self.dataloader_val, self.dataloader_test = dataloaders
