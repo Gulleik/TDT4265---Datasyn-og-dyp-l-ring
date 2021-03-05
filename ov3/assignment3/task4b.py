@@ -55,10 +55,8 @@ for i in indices:
     plt.imsave(filename_w, img)
     
 for i, layer in enumerate(model.children()):
-    if i > 0 and i <= 7 :
+    if i > 0 and i <= 7:
         activation = layer(activation)
-    else:
-        break
         
 for i in range(10):
     filename = "images/activations4c" + str(i) + ".png"
