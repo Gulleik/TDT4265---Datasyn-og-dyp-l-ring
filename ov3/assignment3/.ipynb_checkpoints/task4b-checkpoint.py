@@ -47,3 +47,19 @@ def torch_image_to_numpy(image: torch.Tensor):
 
 
 indices = [14, 26, 32, 49, 52]
+for i in indices:
+    filename = "images/activations" + str(i) + ".png"
+    filename_w = "images/weights" + str(i) + ".png"
+    torchvision.utils.save_image(activation[0][i], filename)
+    img = torch_image_to_numpy(first_conv_layer.weight[i])
+    plt.imsave(filename_w, img)
+    
+for i, layer in enumerate(model.children()):
+    if i > 0 and i <= 7 :
+        activation = layer(activation)
+    else:
+        break
+        
+for i in range(10):
+    filename = "images/activations4c" + str(i) + ".png"
+    torchvision.utils.save_image(activation[0][i], filename)
