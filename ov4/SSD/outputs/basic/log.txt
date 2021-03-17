@@ -1,0 +1,1482 @@
+2021-03-17 14:23:14,082 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:23:14,084 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:23:14,086 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:23:14,089 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:24:21,919 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:24:21,919 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:24:21,921 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:24:21,921 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:24:21,925 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:24:21,925 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:24:21,929 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:24:21,929 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:24:31,662 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:24:31,662 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:24:31,662 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:24:31,666 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:24:31,666 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:24:31,666 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:24:31,669 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:24:31,669 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:24:31,669 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:24:31,673 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:24:31,673 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:24:31,673 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:24:46,859 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:24:46,859 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:24:46,859 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:24:46,859 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:24:46,863 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:24:46,863 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:24:46,863 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:24:46,863 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:24:46,868 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:24:46,868 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:24:46,868 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:24:46,868 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:24:46,874 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:24:46,874 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:24:46,874 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:24:46,874 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:25:08,121 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:25:08,121 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:25:08,121 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:25:08,121 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:25:08,121 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:25:08,126 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:25:08,126 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:25:08,126 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:25:08,126 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:25:08,126 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:25:08,131 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:25:08,131 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:25:08,131 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:25:08,131 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:25:08,131 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:25:08,136 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:25:08,136 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:25:08,136 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:25:08,136 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:25:08,136 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:26:47,097 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:26:47,100 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:26:47,102 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:26:47,103 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:26:47,163 SSD.trainer INFO: No checkpoint found.
+2021-03-17 14:27:52,363 SSD.trainer INFO: Start training ...
+2021-03-17 14:29:03,681 SSD INFO: Namespace(ckpt=None, config_file='configs/mnist.yaml', opts=[], output_dir='eval_results')
+2021-03-17 14:29:03,681 SSD INFO: Namespace(ckpt=None, config_file='configs/mnist.yaml', opts=[], output_dir='eval_results')
+2021-03-17 14:29:03,683 SSD INFO: Loaded configuration file configs/mnist.yaml
+2021-03-17 14:29:03,683 SSD INFO: Loaded configuration file configs/mnist.yaml
+2021-03-17 14:29:03,687 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "datasets"
+2021-03-17 14:29:03,687 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "datasets"
+2021-03-17 14:29:03,690 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:29:03,690 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:29:03,742 SSD.inference INFO: No checkpoint found.
+2021-03-17 14:29:03,742 SSD.inference INFO: No checkpoint found.
+2021-03-17 14:29:12,441 SSD.inference INFO: Evaluating mnist_detection_val dataset(1000 images):
+2021-03-17 14:29:12,441 SSD.inference INFO: Evaluating mnist_detection_val dataset(1000 images):
+2021-03-17 14:29:48,525 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:29:48,525 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:29:48,525 SSD INFO: Namespace(config_file='configs/mnist_tdt4265_server.yaml', opts=[])
+2021-03-17 14:29:48,529 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:29:48,529 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:29:48,529 SSD INFO: Loaded configuration file configs/mnist_tdt4265_server.yaml
+2021-03-17 14:29:48,534 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:29:48,534 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:29:48,534 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 11
+    BACKBONE:
+        NAME: 'basic'
+        PRETRAINED: False
+        OUT_CHANNELS: [128, 256, 128, 128, 64, 64]
+        INPUT_CHANNELS: 3
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("mnist_detection_train", "mnist_detection_val")
+    TEST: ("mnist_detection_val", )
+SOLVER:
+    MAX_ITER: 10000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 2e-3
+OUTPUT_DIR: 'outputs/basic'
+DATASET_DIR: "/work/datasets"
+2021-03-17 14:29:48,540 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:29:48,540 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:29:48,540 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('mnist_detection_val',)
+  TRAIN: ('mnist_detection_train', 'mnist_detection_val')
+DATASET_DIR: /work/datasets
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: basic
+    OUT_CHANNELS: (128, 256, 128, 128, 64, 64)
+    PRETRAINED: False
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 11
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 500
+OUTPUT_DIR: outputs/basic
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.002
+  MAX_ITER: 10000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:29:48,580 SSD.trainer INFO: No checkpoint found.
+2021-03-17 14:29:48,580 SSD.trainer INFO: No checkpoint found.
+2021-03-17 14:29:48,580 SSD.trainer INFO: No checkpoint found.
+2021-03-17 14:29:54,646 SSD.trainer INFO: Start training ...
+2021-03-17 14:29:54,646 SSD.trainer INFO: Start training ...
+2021-03-17 14:29:54,646 SSD.trainer INFO: Start training ...

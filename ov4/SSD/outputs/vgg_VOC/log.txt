@@ -1,0 +1,68 @@
+2021-03-17 14:00:29,531 SSD INFO: Loaded configuration file configs/vgg_ssd300_voc0712_tdt4265_server.yaml
+2021-03-17 14:00:29,533 SSD INFO: 
+MODEL:
+    NUM_CLASSES: 21
+INPUT:
+    IMAGE_SIZE: [300, 300]
+DATASETS:
+    TRAIN: ("voc_2007_trainval", "voc_2012_trainval")
+    TEST: ("voc_2007_test", )
+SOLVER:
+    MAX_ITER: 100000
+    GAMMA: 0.1
+    BATCH_SIZE: 16
+    LR: 5e-4
+  
+OUTPUT_DIR: 'outputs/vgg_VOC'
+EVAL_STEP: 2500
+MODEL_SAVE_STEP: 2500
+DATASET_DIR: "/work/datasets/"
+2021-03-17 14:00:29,535 SSD INFO: Running with config:
+DATASETS:
+  TEST: ('voc_2007_test',)
+  TRAIN: ('voc_2007_trainval', 'voc_2012_trainval')
+DATASET_DIR: /work/datasets/
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: True
+EVAL_STEP: 2500
+INPUT:
+  IMAGE_SIZE: [300, 300]
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [1, 1, 1]
+LOG_STEP: 10
+MODEL:
+  BACKBONE:
+    INPUT_CHANNELS: 3
+    NAME: vgg
+    OUT_CHANNELS: (512, 1024, 512, 256, 256, 256)
+    PRETRAINED: True
+  CENTER_VARIANCE: 0.1
+  NEG_POS_RATIO: 3
+  NUM_CLASSES: 21
+  PRIORS:
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 4, 4]
+    CLIP: True
+    FEATURE_MAPS: [[38, 38], [19, 19], [10, 10], [5, 5], [3, 3], [1, 1]]
+    MAX_SIZES: [[60, 60], [111, 111], [162, 162], [213, 213], [264, 264], [315, 315]]
+    MIN_SIZES: [[30, 30], [60, 60], [111, 111], [162, 162], [213, 213], [264, 264]]
+    STRIDES: [[8, 8], [16, 16], [32, 32], [64, 64], [100, 100], [300, 300]]
+  SIZE_VARIANCE: 0.2
+  THRESHOLD: 0.5
+MODEL_SAVE_STEP: 2500
+OUTPUT_DIR: outputs/vgg_VOC
+SOLVER:
+  BATCH_SIZE: 16
+  GAMMA: 0.1
+  LR: 0.0005
+  MAX_ITER: 100000
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+TEST:
+  BATCH_SIZE: 10
+  CONFIDENCE_THRESHOLD: 0.01
+  MAX_PER_CLASS: -1
+  MAX_PER_IMAGE: 100
+  NMS_THRESHOLD: 0.45
+2021-03-17 14:00:36,679 SSD.trainer INFO: No checkpoint found.
